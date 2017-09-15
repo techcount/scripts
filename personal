@@ -1,0 +1,86 @@
+#!/bin/bash
+
+mkdir ~/personalConfig_temp
+cd ~/personalConfig_temp
+
+# Installing Chrome
+curl -L -O "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+hdiutil mount -nobrowse googlechrome.dmg
+cp -R "/Volumes/Google Chrome/Google Chrome.app" /Applications
+hdiutil unmount "/Volumes/Google Chrome"
+rm googlechrome.dmg
+
+# Installing Firefox
+curl -L -o Firefox.dmg "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
+hdiutil mount -nobrowse Firefox.dmg
+cp -R "/Volumes/Firefox/Firefox.app" /Applications
+hdiutil unmount "/Volumes/Firefox"
+rm Firefox.dmg
+
+# Installing Spotify
+curl -L -O "http://download.spotify.com/Spotify.dmg"
+hdiutil mount -nobrowse Spotify.dmg
+cp -R "/Volumes/Spotify/Spotify.app" /Applications
+hdiutil unmount "/Volumes/Spotify"
+rm Spotify.dmg
+
+# Installing VLC Player
+curl -L -o vlc.dmg "http://get.videolan.org/vlc/2.2.4/macosx/vlc-2.2.4.dmg"
+hdiutil mount -nobrowse vlc.dmg -mountpoint /Volumes/vlc
+cp -R "/Volumes/vlc/VLC.app" /Applications
+hdiutil unmount "/Volumes/vlc"
+rm vlc.dmg
+
+# Installing caffeine
+curl -L -o Caffeine.zip "http://download.lightheadsw.com/download.php?software=caffeine"
+unzip Caffeine.zip
+mv Caffeine.app /Applications
+rm Caffeine.zip
+
+# Installing Sublime Text 2
+echo "Installing Sublime Text 2"
+curl -L -o "Sublime Text 2.0.2.dmg" "http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2.dmg"
+hdiutil mount -nobrowse "Sublime Text 2.0.2.dmg"
+cp -R "/Volumes/Sublime Text 2/Sublime Text 2.app" /Applications
+hdiutil unmount "/Volumes/Sublime Text 2/Sublime Text 2.app"
+rm "Sublime Text 2.0.2.dmg"
+
+# Installing flux
+curl -L -O "https://justgetflux.com/mac/Flux.zip"
+unzip Flux.zip
+mv Flux.app /Applications
+rm Flux.zip
+
+# Installing LibreOffice
+curl -L -o LibreOffice.dmg "http://download.documentfoundation.org/libreoffice/stable/5.3.2/mac/x86_64/LibreOffice_5.3.2_MacOS_x86-64.dmg" -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36"
+hdiutil mount -nobrowse LibreOffice.dmg
+cp -R "/Volumes/LibreOffice/LibreOffice.app" /Applications
+hdiutil unmount "/Volumes/LibreOffice"
+rm LibreOffice.dmg
+
+# Installing Cyberduck
+curl -L -o Cyberduck.zip "https://update.cyberduck.io/Cyberduck-5.4.4.23962.zip"
+unzip Cyberduck.zip
+mv Cyberduck.app /Applications
+rm Cyberduck.zip
+
+# Installing Grand Persepective
+curl -L -o GrandPerspective.dmg "https://downloads.sourceforge.net/project/grandperspectiv/grandperspective/1.9.1/GrandPerspective-1_9_1.dmg"
+hdiutil mount -nobrowse GrandPerspective.dmg
+cp -R "/Volumes/GrandPerspective 1.9.1/GrandPerspective.app" /Applications
+hdiutil unmount "/Volumes/GrandPerspective 1.9.1"
+rm GrandPerspective.dmg
+
+# Installing The Unarchiver
+curl -L -o TheUnarchiver.zip "http://unarchiver.c3.cx/downloads/TheUnarchiver3.11.1.zip"
+unzip TheUnarchiver.zip
+mv "The Unarchiver.app" /Applications
+rm TheUnarchiver.zip
+
+# Installing Calibre
+curl -L -o calibre.dmg "http://code.calibre-ebook.com/dist/osx"
+hdiutil mount -nobrowse calibre.dmg -nobrowse -mountpoint /Volumes/calibre/
+cp -R "/Volumes/calibre/calibre.app" /Applications
+hdiutil unmount "/Volumes/calibre"
+rm calibre.dmg
+
