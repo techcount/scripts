@@ -51,13 +51,6 @@ unzip Flux.zip
 mv Flux.app /Applications
 rm Flux.zip
 
-# Installing LibreOffice
-curl -L -o LibreOffice.dmg "http://download.documentfoundation.org/libreoffice/stable/5.3.2/mac/x86_64/LibreOffice_5.3.2_MacOS_x86-64.dmg" -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36"
-hdiutil mount -nobrowse LibreOffice.dmg
-cp -R "/Volumes/LibreOffice/LibreOffice.app" /Applications
-hdiutil unmount "/Volumes/LibreOffice"
-rm LibreOffice.dmg
-
 # Installing Cyberduck
 curl -L -o Cyberduck.zip "https://update.cyberduck.io/Cyberduck-5.4.4.23962.zip"
 unzip Cyberduck.zip
