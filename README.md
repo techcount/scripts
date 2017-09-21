@@ -6,6 +6,24 @@ Use the following syntax:
 
 `curl -s http://techcount.xyz/scripts/<script name> | sh`
   
-where <script name> can be replaced by:
+where <script name> is replaced by:
   * personal
   * image
+  
+## Personal
+  * [Chrome](www.google.com/chrome)
+  * [Firefox](https://www.mozilla.org/en-US/firefox/)
+  * [VLC](https://www.videolan.org/vlc/)
+  * [Caffeine](http://lightheadsw.com/caffeine/)
+  * [Sublime Text 2](http://www.sublimetext.com/2)
+  * [f.lux](https://justgetflux.com/)
+  * [Cyberduck](https://cyberduck.io/)
+  * [Grand Perspective](http://grandperspectiv.sourceforge.net/)
+  * [The Unarchiver](https://theunarchiver.com/)
+  * [Calibre](https://calibre-ebook.com/download)
+  
+  ## Image
+  * [Chrome](www.google.com/chrome)
+  * [Firefox](https://www.mozilla.org/en-US/firefox/)
+  * [VLC](https://www.videolan.org/vlc/)
+  * [The Unarchiver](https://theunarchiver.com/)
