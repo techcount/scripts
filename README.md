@@ -6,11 +6,11 @@ Use the following syntax:
 
 `curl -s http://techcount.xyz/scripts/<script name> | sh`
   
-where <script name> is replaced by:
+where `<script name>` is replaced by:
   * personal
   * image
   
-## Personal
+## personal
   * [Chrome](www.google.com/chrome)
   * [Firefox](https://www.mozilla.org/en-US/firefox/)
   * [VLC](https://www.videolan.org/vlc/)
@@ -22,7 +22,7 @@ where <script name> is replaced by:
   * [The Unarchiver](https://theunarchiver.com/)
   * [Calibre](https://calibre-ebook.com/download)
   
-  ## Image
+  ## image
   * [Chrome](www.google.com/chrome)
   * [Firefox](https://www.mozilla.org/en-US/firefox/)
   * [VLC](https://www.videolan.org/vlc/)
